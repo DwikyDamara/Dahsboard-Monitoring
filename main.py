@@ -2,7 +2,7 @@
 This is main module
 """
 from EathquakeDetection import data_extraction, data_displaying
-from PopularNews import data_extraction1,data_displaying1
+import PopularNews
 
 
 if __name__ == "__main__":
@@ -10,7 +10,6 @@ if __name__ == "__main__":
     result = data_extraction()
     data_displaying(result)
 
-
     print("\nPopular News Dashboard!")
-    result = data_extraction1()
-    data_displaying1(result)
+    result = PopularNews.data_extraction1()
+    PopularNews.data_displaying1(result)
